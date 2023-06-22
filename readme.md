@@ -1,6 +1,7 @@
 
  # JAVASCRIPT CALCULATOR
 
+![Screenshot here](/screenshot.png)
  ## Example of functionality: 
   1. user presses 1 button
   2. user presses + button
