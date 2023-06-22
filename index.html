@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="styles.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="header">
+				<h1>My Calculator</h1>
+				<input id="display" type="text" />
+			</section>
+
+			<section class="buttons">
+				<button onclick="getNumber(1)">1</button>
+				<button onclick="getNumber(2)">2</button>
+				<button onclick="getNumber(3)">3</button>
+				<button onclick="getOperator('+')">+</button>
+
+				<button onclick="getNumber(4)">4</button>
+				<button onclick="getNumber(5)">5</button>
+				<button onclick="getNumber(6)">6</button>
+				<button onclick="getOperator('-')">-</button>
+
+				<button onclick="getNumber(7)">7</button>
+				<button onclick="getNumber(8)">8</button>
+				<button onclick="getNumber(9)">9</button>
+				<button onclick="getOperator('*')">*</button>
+
+				<button onclick="clearDisplay()">ce</button>
+				<button onclick="getNumber(0)">0</button>
+
+				<button onclick="calculateResult()">=</button>
+				<button onclick="getOperator('/')">/</button>
+			</section>
+			<script src="scripts.js"></script>
+		</div>
+	</body>
+</html>
