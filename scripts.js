@@ -1,56 +1,37 @@
-let firstNumber
-let secondNumber
-let step = 0
-let operation
-let result = 0
+/*********
+ * JAVASCRIPT CALCULATOR
+ * *************************
+ * 
+ * Example of functionality: 
+ * 1. user presses 1 button
+ * 2. user presses + button
+ * 3. user presses 3 button 
+ * 4. user presses = button 
+ * 5. then result will display inside an input field
+ * 
+ * 
+ * Overview of logic: 
+ * 1. When user presses the first number, we need to save that number in a variable
+ * 2. Then user presses on an operator button like + or -, we need to save that operator in a variable
+ * 3. Then user presses the second number we need to save that second number in a variable
+ * 4. Then user presses the equal sign, then the first number needs to be calculated with the second number
+ * 5. Then display the result in the display input value 
+ * 
+ * 
+ * Overview of steps:
+ * 1. Set up all variables to hold and keep track of values
+ * 2. set up variable for the display input item
+ * 3. create a function to get the number from the number buttons
+ * 4. create a function to get the operator from the button
+ * 5. create a function to calculate the result when the Equal button is pressed
+ * 6. create a function that clears all the variables and the input display
+ * 
+ * 
+ */
 
-let numArray = []
-let secondNumberArr = []
+// start coding from here
 
-let display = document.getElementById('display')
+// Variables should be on top of the file - here
 
-function getNumber(num) {
-	if (step === 0 || step === 1) {
-		numArray.push(num)
-		step = 1
-		firstNumber = Number(numArray.join(''))
-		display.value = firstNumber
-	} else if (step === 2) {
-		secondNumberArr.push(num)
-		secondNumber = Number(secondNumberArr.join(''))
-		display.value = secondNumber
-	}
-}
+// Functions should follow - here
 
-function getOperator(operator) {
-	step = 2
-	operation = operator
-}
-
-function calculateResult() {
-	console.log('first number', firstNumber, 'second number', secondNumber)
-	if (operation === '+') {
-		result = firstNumber + secondNumber
-		display.value = result
-	} else if (operation === '-') {
-		result = firstNumber - secondNumber
-		display.value = result
-	} else if (operation === '*') {
-		result = firstNumber * secondNumber
-		display.value = result
-	} else if (operation === '/') {
-		result = firstNumber / secondNumber
-		display.value = result
-	}
-}
-
-function clearDisplay() {
-	display.value = 0
-	firstNumber = null
-	secondNumber = null
-	step = 0
-	operation = null
-	result = 0
-	numArray = []
-	secondNumberArr = []
-}
