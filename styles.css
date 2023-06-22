@@ -1,51 +1,9 @@
-body {
-	background-color: #0e0e0e;
-	font-family: 'Courier New', Courier, monospace;
-}
+/* add background color to your body */
 
-.container {
-	margin: 10vh auto;
-	width: 500px;
-	padding: 2rem;
-	text-align: center;
-	border-radius: 10px;
-	background-color: #272727;
-}
+/* add container to hold everything and put it in the middle of the page */
 
-.header {
-	margin: 2rem;
-	color: #666;
-}
+/* in container add header */
 
-input {
-	width: 370px;
-	padding: 0.5rem 2rem;
-	font-size: 3rem;
-	border-radius: 10px;
-	text-align: right;
+/* in header add a heading tag and input to for top section */
 
-	background-color: #272727;
-	color: #666;
-}
-
-.buttons {
-	margin: auto;
-	width: 450px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-button {
-	padding: 40px;
-	font-size: 20px;
-	margin: 0.5rem;
-	max-width: 100px;
-	max-height: 100px;
-	text-align: center;
-	border-radius: 10%;
-
-	font-weight: 900;
-	background-color: #272727;
-	color: #666;
-}
+/* style buttons section and buttons within */
