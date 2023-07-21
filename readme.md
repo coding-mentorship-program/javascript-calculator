@@ -15,6 +15,9 @@
   3. Then user presses the second number we need to save that second number in a variable
   4. Then user presses the equal sign, then the first number needs to be calculated with the second number
   5. Then display the result in the display input value 
+
+Live project: 
+https://coding-mentorship-program.github.io/javascript-calculator
   
   
 ## Overview of steps:
